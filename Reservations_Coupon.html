@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation in CLASSIC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="nav1">
+
+        <a href="Home.html" class="rsvp_logo">
+            <p>CLASSIC</p>
+        </a>
+
+        <select id="language-select">
+            <option value="en">en</option>
+            <option value="fr">fr</option>
+            <!-- <option value="de">German</option> -->
+            <!-- Add more options as needed -->
+        </select>
+
+    </nav>
+
+    <nav id="nav2">
+
+        <div class="toggler2">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div>
+            <ul id="nav2-ul">
+                <li>
+                    <a href="Home.html" id="Home">Home</a>
+                </li>
+                <li>
+                    <a href="Reservations_Regular.html">Regular</a>
+                </li>
+
+                <li>
+                    <a href="Reservations_Semi-Executive.html">Semi-Executive</a>
+                </li>
+                <li>
+                    <a href="Reservations_Executive.html">Executive</a>
+                </li>
+                <li>
+                    <a href="Reservations_Special-Order.html">Special-Order</a>
+                </li>
+                <li>
+                    <a href="Reservations_Coupon.html" id="btn_coupon"><button id="coupon">Coupon</button></a>
+                </li>
+                <li>
+
+                    <a href="https://wa.me/0543619157" target="_blank"><button id="btn_logout">WhatsApp</button></a>
+
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="person1_fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+            </svg>
+        </div>
+
+    </nav>
+
+    <div class="user1">
+        <ul>
+            <li>
+                <P>User</P>
+            </li>
+            <li>
+                <a href="#">Order Count: <span id="order_counter">0</span></a>
+            </li>
+            <li>
+                <a href="#">Photos</a>
+            </li>
+            <li>
+                <a href="#">Invite</a>
+            </li>
+            <LI>
+                <a href="index.html">Log Out</a>
+            </LI>
+        </ul>
+    </div>
+
+    <div class="welcome">
+
+        <button id="btn">Click Me!</button><br>
+
+        <p id="welcome1">Welcome to CLASSICRestaurant. <br>Please download our menu and make your reservation below. <br>Thank you.</p><br>
+        <a href="./asset/Pdf/CLASSICRestaurant Menu.pdf" target="_blank"><button id="welcome1_btn">Click for Menu PDF</button></a>
+
+    </div>
+
+    <Section class="reservation">
+        <div class="rsv-hours-quote">
+            <p><span>COUPON RESERVATIONS:</span> Monday to Saturday 8:00 AM - 7:00 PM <br><br> CLASSIC RESTAURANT'S experience is designed to accomodate all age groups in exception of babies and toddlers. <br> Our menu options are available for both adults
+                and children seeking for a memorable time with our services. <br> Our great chefs have a skilled hand to fit the tastes of our audience</p>
+        </div>
+        <div class="reservation_container">
+            <p id="rsv">Reservation for:</p>
+            <div class="rsv_input">
+                <div>
+                    <label><input type="radio" name="select"> Single</label>
+                </div>
+                <div>
+                    <label><input type="radio" name="select"> Couple</label>
+                </div>
+                <div>
+                    <label><input type="radio" name="select"> Other: <span ><input id="othspec" type="text"placeholder="Please Specify" required></span></label><br>
+                </div>
+            </div>
+        </div>
+        <hr id="hr1">
+        <form class="menu">
+            <p id="form1">Please select from our Menu and order now.</p>
+            <hr id="hr2">
+
+            <h1 id="hdt">MENU</h1>
+            <div class="menu1">
+
+                <div id="breakfast">
+                    <h4 class="caption">BREAKFAST</h4>
+                    <p class="range">COUPON</p>
+                    <select class="menu-input">
+                        <option value="">BREAKFAST MENU</option>
+                        <option value="Ordered Dishes">Ordered Dishes</option>
+                        <option value="Local Dishes">Local Dishes</option>
+                        <option value="Continental Dishes">Continental Dishes</option>
+                        <option value="Wine and Liquors">Wine and Liquors</option>
+                    </select>
+                    <input class="menu-input" type="datetime-local" placeholder="Specify Date and Time">
+
+
+                </div>
+
+                <div id="lunch">
+                    <h4 class="caption">LUNCH</h4>
+                    <p class="range">COUPON</p>
+                    <select class="menu-input">
+                        <option value="">LUNCH MENU</option>
+                        <option value="Ordered Dishes">Ordered Dishes</option>
+                        <option value="Local Dishes">Local Dishes</option>
+                        <option value="Continental Dishes">Continental Dishes</option>
+                        <option value="Wine and Liquors">Wine and Liquors</option>
+                    </select>
+                    <input class="menu-input" type="datetime-local" placeholder="Specify Date and Time">
+
+
+                </div>
+
+                <div id="dinner">
+                    <h4 class="caption">DINNER</h4>
+                    <p class="range">COUPON</p>
+                    <select class="menu-input">
+                        <option value="">DINNER MENU</option>
+                        <option value="Ordered Dishes">Ordered Dishes</option>
+                        <option value="Local Dishes">Local Dishes</option>
+                        <option value="Continental Dishes">Continental Dishes</option>
+                        <option value="Wine and Liquors">Wine and Liquors</option>
+                    </select>
+                    <input class="menu-input" type="datetime-local" placeholder="Specify Date and Time">
+
+
+                </div>
+            </div>
+            <div class="coupon_details">
+                <h4>Coupon Details:</h4>
+                <div>
+                    <input type="text-number" placeholder="Enter coupon number" class="menu-input">
+                    <input type="text" placeholder="Enter coupon holder" class="menu-input">
+                    <select class="menu-input">
+                        <option value="">Select Sponsorer</option>
+                        <option value="Total Energies">Total Energies</option>
+                        <option value="Shell">Shell</option>
+                        <option value="Tallow">Tallow</option>
+                        <option value="Goil">Goil</option>
+                        <option value="VIP">VIP</option>
+                        <option value="Promotion">Promotion</option>
+                    </select>
+                    <a href="pay_now.html"><button class="order-now">Order Now</button></a>
+                </div>
+            </div>
+        </form>
+    </Section>
+
+    <div class="back-to-top">
+        <a href="#"><button class="btt-btn">&#x2191;</button></a>
+    </div>
+
+    <footer>
+        <div>
+            <p>
+                <span>&copy;</span>2024 CLASSICRestaurant
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script type="text/javascript" src="nav2.js"></script>
+</body>
+
+</html>
